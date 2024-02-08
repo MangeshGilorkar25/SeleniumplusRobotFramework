@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-08T08:28:25.657324" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo2 Selenium" source="C:\Users\mgilorka\PycharmProjects\pythonProject2\Zrobot_Suite\demo2_selenium.robot">
+<test id="s1-t1" name="TC1 FB Login" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-08T08:28:25.758929" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T08:28:25.758929" elapsed="7.470423"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-08T08:28:33.230368" elapsed="0.119409"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-08T08:28:33.349777" elapsed="0.001009"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-08T08:28:33.351786" level="INFO">Opening url 'https://www.facebook.com/'</msg>
+<arg>url=https://www.facebook.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-08T08:28:33.351786" elapsed="3.249120"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T08:28:36.601147" level="INFO">Clicking element 'xpath=//button[text()='Allow all cookies']'.</msg>
+<msg time="2024-02-08T08:28:46.806719" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-08T08:28:46.806719" level="FAIL">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</msg>
+<arg>xpath=//button[text()='Allow all cookies']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-02-08T08:28:36.601147" elapsed="10.206511">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>locator=id=email</arg>
+<arg>text=hello12344444@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T08:28:46.808657" elapsed="0.000000"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id=pass</arg>
+<arg>pass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T08:28:46.808657" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>name=login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T08:28:46.808657" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-08T08:28:25.757988" elapsed="21.050669">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
+</test>
+<test id="s1-t2" name="TC2 FB SignUP" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-08T08:28:46.810692" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-08T08:28:46.809692" elapsed="5.326361"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-08T08:28:52.137079" elapsed="0.111915"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-08T08:28:52.250038" elapsed="0.001156"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-08T08:28:52.251194" level="INFO">Opening url 'https://www.facebook.com/'</msg>
+<arg>url=https://www.facebook.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-08T08:28:52.251194" elapsed="10.881789"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-08T08:29:03.132983" level="INFO">Clicking element 'xpath=//button[text()='Allow all cookies']'.</msg>
+<msg time="2024-02-08T08:29:13.319977" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-08T08:29:13.320978" level="FAIL">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</msg>
+<arg>xpath=//button[text()='Allow all cookies']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-02-08T08:29:03.132983" elapsed="10.187995">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>link=Create new account</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-02-08T08:29:13.321980" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=day</arg>
+<arg>20</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-02-08T08:29:13.321980" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-08T08:28:46.809692" elapsed="26.512288">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
+</test>
+<status status="FAIL" start="2024-02-08T08:28:25.658368" elapsed="47.664941"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Demo2 Selenium">Demo2 Selenium</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
