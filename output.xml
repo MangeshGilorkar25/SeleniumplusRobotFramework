@@ -1,108 +1,191 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-08T08:28:25.657324" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-09T05:20:35.485939" rpa="false" schemaversion="5">
 <suite id="s1" name="Demo2 Selenium" source="C:\Users\mgilorka\PycharmProjects\pythonProject2\Zrobot_Suite\demo2_selenium.robot">
-<test id="s1-t1" name="TC1 FB Login" line="5">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-08T08:28:25.758929" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<test id="s1-t1" name="TC1 FB Login" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-02-09T05:20:35.595938" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-08T08:28:25.758929" elapsed="7.470423"/>
+<status status="PASS" start="2024-02-09T05:20:35.595938" elapsed="5.613800"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:20:41.210739" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:20:41.210739" elapsed="4.669423"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-08T08:28:33.230368" elapsed="0.119409"/>
+<status status="PASS" start="2024-02-09T05:20:45.881215" elapsed="0.125318"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-02-08T08:28:33.349777" elapsed="0.001009"/>
+<status status="PASS" start="2024-02-09T05:20:46.007500" elapsed="0.005000"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-08T08:28:33.351786" level="INFO">Opening url 'https://www.facebook.com/'</msg>
+<msg time="2024-02-09T05:20:46.014515" level="INFO">Opening url 'https://www.facebook.com/'</msg>
 <arg>url=https://www.facebook.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-08T08:28:33.351786" elapsed="3.249120"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-08T08:28:36.601147" level="INFO">Clicking element 'xpath=//button[text()='Allow all cookies']'.</msg>
-<msg time="2024-02-08T08:28:46.806719" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-08T08:28:46.806719" level="FAIL">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</msg>
-<arg>xpath=//button[text()='Allow all cookies']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-02-08T08:28:36.601147" elapsed="10.206511">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
+<status status="PASS" start="2024-02-09T05:20:46.013500" elapsed="0.855955"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:20:46.870455" level="INFO">Typing text 'hello12344444@gmail.com' into text field 'id=email'.</msg>
 <arg>locator=id=email</arg>
 <arg>text=hello12344444@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-08T08:28:46.808657" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-09T05:20:46.869455" elapsed="0.060783"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:20:46.931215" level="INFO">Typing password into text field 'id=pass'.</msg>
+<msg time="2024-02-09T05:20:46.953213" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>id=pass</arg>
 <arg>pass</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-08T08:28:46.808657" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-09T05:20:46.931215" elapsed="0.052608"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:20:46.983823" level="INFO">Clicking element 'name=login'.</msg>
 <arg>name=login</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-08T08:28:46.808657" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-09T05:20:46.983823" elapsed="0.040011"/>
 </kw>
-<status status="FAIL" start="2024-02-08T08:28:25.757988" elapsed="21.050669">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:20:47.023834" elapsed="2.086458"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:20:35.594938" elapsed="13.517280"/>
 </test>
-<test id="s1-t2" name="TC2 FB SignUP" line="15">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-08T08:28:46.810692" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<test id="s1-t2" name="TC2 FB SignUP" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-02-09T05:20:49.116207" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-08T08:28:46.809692" elapsed="5.326361"/>
+<status status="PASS" start="2024-02-09T05:20:49.115205" elapsed="7.105067"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:20:56.221270" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:20:56.221270" elapsed="5.573898"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-08T08:28:52.137079" elapsed="0.111915"/>
+<status status="PASS" start="2024-02-09T05:21:01.795168" elapsed="0.116645"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-02-08T08:28:52.250038" elapsed="0.001156"/>
+<status status="PASS" start="2024-02-09T05:21:01.912880" elapsed="0.004939"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-02-08T08:28:52.251194" level="INFO">Opening url 'https://www.facebook.com/'</msg>
+<msg time="2024-02-09T05:21:01.919856" level="INFO">Opening url 'https://www.facebook.com/'</msg>
 <arg>url=https://www.facebook.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-02-08T08:28:52.251194" elapsed="10.881789"/>
+<status status="PASS" start="2024-02-09T05:21:01.919856" elapsed="0.683330"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-08T08:29:03.132983" level="INFO">Clicking element 'xpath=//button[text()='Allow all cookies']'.</msg>
-<msg time="2024-02-08T08:29:13.319977" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-08T08:29:13.320978" level="FAIL">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</msg>
-<arg>xpath=//button[text()='Allow all cookies']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-02-08T08:29:03.132983" elapsed="10.187995">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:02.604153" level="INFO">Clicking element 'link=Create new account'.</msg>
 <arg>link=Create new account</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-02-08T08:29:13.321980" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-09T05:21:02.604153" elapsed="0.044382"/>
 </kw>
 <kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:02.649753" level="INFO">Selecting options from selection list 'id=day' by label 20.</msg>
 <arg>id=day</arg>
 <arg>20</arg>
 <doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="NOT RUN" start="2024-02-08T08:29:13.321980" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-09T05:21:02.649753" elapsed="0.435192"/>
 </kw>
-<status status="FAIL" start="2024-02-08T08:28:46.809692" elapsed="26.512288">Element with locator 'xpath=//button[text()='Allow all cookies']' not found.</status>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:21:03.085945" elapsed="2.073741"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:20:49.114201" elapsed="16.046484"/>
 </test>
-<status status="FAIL" start="2024-02-08T08:28:25.658368" elapsed="47.664941"/>
+<test id="s1-t3" name="TC3 Tabs" line="27">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-02-09T05:21:05.163084" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:21:05.163084" elapsed="8.080056"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:13.243140" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:21:13.243140" elapsed="4.897010"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-09T05:21:18.141150" elapsed="0.118174"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-09T05:21:18.260324" elapsed="0.011110"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:18.272444" level="INFO">Opening url 'https://www.db4free.net/'</msg>
+<arg>url=https://www.db4free.net/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:21:18.272444" elapsed="1.014293"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:19.287734" level="INFO">Clicking element 'partial link=phpMyAdmin'.</msg>
+<arg>partial link=phpMyAdmin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:21:19.286737" elapsed="0.058989"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>phpMyAdmin</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:21:19.346228" elapsed="2.390571"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:21.737797" level="INFO">Typing text 'admin' into text field 'id=input_username'.</msg>
+<arg>locator=id=input_username</arg>
+<arg>text=admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:21:21.737797" elapsed="0.080610"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:21.819423" level="INFO">Typing password into text field 'id=input_password'.</msg>
+<msg time="2024-02-09T05:21:21.846407" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=input_password</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:21:21.819423" elapsed="0.066120"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:21.886544" level="INFO">Clicking element 'id=input_go'.</msg>
+<arg>id=input_go</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:21:21.886544" elapsed="0.489586"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:21:22.394151" level="INFO">Element 'id=pma_errors' contains text 'Access denied for user'.</msg>
+<arg>id=pma_errors</arg>
+<arg>Access denied for user</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-09T05:21:22.377120" elapsed="0.017031"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:21:22.395117" elapsed="2.079273"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:21:05.162070" elapsed="19.313299"/>
+</test>
+<status status="PASS" start="2024-02-09T05:20:35.487051" elapsed="48.990328"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="2" skip="0" id="s1" name="Demo2 Selenium">Demo2 Selenium</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Demo2 Selenium">Demo2 Selenium</stat>
 </suite>
 </statistics>
 <errors>

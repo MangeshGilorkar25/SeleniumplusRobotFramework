@@ -1,73 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-08T07:57:33.351659" rpa="false" schemaversion="5">
-<suite id="s1" name="Demo1 Suite" source="C:\Users\mgilorka\PycharmProjects\pythonProject2\Zrobot_Suite\demo1_suite.robot">
-<test id="s1-t1" name="TC2" line="12">
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${My_NAME}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.367660" elapsed="0.000000"/>
+<robot generator="Robot 7.0 (Python 3.11.7 on win32)" generated="2024-02-09T05:09:11.860185" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo2 Selenium" source="C:\Users\mgilorka\PycharmProjects\pythonProject2\Zrobot_Suite\demo2_selenium.robot">
+<test id="s1-t1" name="TC3" line="24">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:09:12.084436" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:09:12.084436" elapsed="9.693080"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${MOBILE}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.368666" elapsed="0.000000"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-09T05:09:21.777516" elapsed="0.114677"/>
 </kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-08T07:57:33.368666" level="INFO">${value} = 45</msg>
-<var>${value}</var>
-<arg>45</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.368666" elapsed="0.000992"/>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-09T05:09:21.892193" elapsed="0.002001"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${value}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.369658" elapsed="0.000000"/>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:09:21.894194" level="INFO">Opening url 'https://www.db4free.net/'</msg>
+<arg>url=https://www.db4free.net/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:09:21.894194" elapsed="0.916221"/>
 </kw>
-<status status="PASS" start="2024-02-08T07:57:33.367660" elapsed="0.001998"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:09:22.811414" level="INFO">Clicking element 'partial link=phpMyAdmin'.</msg>
+<arg>partial link=phpMyAdmin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:09:22.811414" elapsed="0.079841"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>phpMyAdmin</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:09:22.891911" elapsed="2.673944"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:09:25.566853" level="INFO">Typing text 'admin' into text field 'id=input_username'.</msg>
+<arg>locator=id=input_username</arg>
+<arg>text=admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:09:25.565855" elapsed="0.083317"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:09:25.649172" level="INFO">Typing password into text field 'id=input_password'.</msg>
+<msg time="2024-02-09T05:09:25.678225" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=input_password</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:09:25.649172" elapsed="0.066275"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:09:25.716446" level="INFO">Clicking element 'id=input_go'.</msg>
+<arg>id=input_go</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:09:25.716446" elapsed="0.509621"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:09:26.265803" level="INFO">Element 'id=pma_errors' contains text 'Access denied for user'.</msg>
+<arg>id=pma_errors</arg>
+<arg>Access denied for user</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-09T05:09:26.226067" elapsed="0.040737"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:09:26.266804" elapsed="2.109260"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:09:12.083436" elapsed="16.292628"/>
 </test>
-<test id="s1-t2" name="TC2" line="18">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-08T07:57:33.371659" level="INFO">${radius} = 10</msg>
-<var>${radius}</var>
-<arg>10</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.370659" elapsed="0.001000"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-02-08T07:57:33.371659" level="INFO">${pi} = 3.14</msg>
-<var>${pi}</var>
-<arg>3.14</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.371659" elapsed="0.000000"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-02-08T07:57:33.371659" level="INFO">${res} = 314.0</msg>
-<var>${res}</var>
-<arg>${pi}*${radius}*${radius}</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.371659" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${res}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-02-08T07:57:33.371659" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-02-08T07:57:33.370659" elapsed="0.002000"/>
-</test>
-<status status="PASS" start="2024-02-08T07:57:33.353659" elapsed="0.019000"/>
+<status status="PASS" start="2024-02-09T05:09:11.862185" elapsed="16.513879"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Demo1 Suite">Demo1 Suite</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demo2 Selenium">Demo2 Selenium</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-02-08T07:57:33.370659" level="WARN">Multiple tests with name 'TC2' executed in suite 'Demo1 Suite'.</msg>
 </errors>
 </robot>
